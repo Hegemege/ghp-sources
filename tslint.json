@@ -1,9 +1,10 @@
 {
     "defaultSeverity": "warning",
-    "extends": [
-        "tslint:recommended"
-    ],
-        "rules": {
+    "extends": ["tslint:recommended"],
+    "linterOptions": {
+        "exclude": ["node_modules/**"]
+    },
+    "rules": {
         "quotemark": [true, "double"],
         "indent": [true, "spaces", 4],
         "interface-name": false,

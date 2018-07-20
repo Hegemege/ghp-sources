@@ -1,0 +1,175 @@
+/* General colors */
+$common-background-color: #3e4756;
+$common-text-color: #e8e8e8;
+
+/* Media query sizes */
+
+$mobile: 70em;
+$desktop-small: 100em;
+
+$input-width-desktop: 400px;
+
+$font-family: "Avenir", Helvetica, Arial, sans-serif;
+$common-font-size: 16px;
+$common-font-line-height: 1.5em;
+$common-font-line-height-h1: 1em;
+$common-font-line-height-h2: 1em;
+
+/* General app content */
+
+#app {
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $common-font-size;
+    line-height: $common-font-line-height;
+    color: $common-text-color;
+    background-color: $common-background-color;
+}
+
+h1 {
+    line-height: $common-font-line-height-h1;
+}
+
+h2 {
+    line-height: $common-font-line-height-h2;
+}
+
+/* Flex structure */
+
+.full-height {
+    height: 100%;
+}
+
+.page-full-height {
+    min-height: 100vh;
+    @media (min-width: $mobile) {
+        height: 100%;
+    }
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-item-2 {
+    flex: 2;
+}
+
+.flex-item-3 {
+    flex: 3;
+}
+
+.flex-item-4 {
+    flex: 4;
+}
+
+.flex-item-desktop {
+    min-height: 700px;
+    @media (min-width: $mobile) {
+        flex: 1;
+        min-height: auto;
+    }
+}
+
+.flex-container {
+    display: flex;
+}
+
+// Flex container that is row-direction in desktop
+// and column-direction in mobile
+.flex-container-desktop {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    @media (min-width: $mobile) {
+        flex-direction: row;
+    }
+}
+
+// Flex container that is column-direction in desktop
+// and row-direction in mobile
+.flex-container-mobile {
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $mobile) {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+}
+
+.flex-container-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-stretch {
+    align-items: stretch;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+
+/* Misc */
+
+.content-wrapper {
+    width: 100%;
+
+    @media (min-width: $desktop-small) {
+        align-items: center;
+    }
+}
+
+.content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @media (min-width: $mobile) {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    @media (min-width: $desktop-small) {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: calc(#{$desktop-small} - 10em);
+        min-width: calc(#{$desktop-small} - 10em);
+        display: flex;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
