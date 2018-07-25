@@ -1,10 +1,11 @@
 /* General colors */
-$common-background-color: #3e4756;
+$common-background-color: #3d434e;
+$common-background-color-dark: #2f333a;
 $common-text-color: #e8e8e8;
 
 /* Media query sizes */
 
-$mobile: 70em;
+$mobile: 60em;
 $desktop-small: 100em;
 
 $input-width-desktop: 400px;
@@ -109,6 +110,10 @@ h2 {
 
 .flex-align-stretch {
     align-items: stretch;
+}
+
+.flex-justify-end {
+    justify-content: flex-end;
 }
 
 .flex-wrap {

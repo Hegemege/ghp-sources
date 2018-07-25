@@ -1,8 +1,6 @@
 <template>
   <div id="app" class="page-full-height flex-container-vertical">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
+    <Nav></Nav>
     <div class="content flex-item">
         <h1>Test header</h1>
         <p>Test content</p>
@@ -11,8 +9,21 @@
   </div>
 </template>
 
+<script>
+import { Component, Vue } from "vue-property-decorator";
+
+import Nav from "@/components/Nav";
+
+@Component({
+    components: {
+        Nav,
+    },
+})
+export default class App extends Vue {}
+</script>
+
 <style lang="scss">
-@import "style.scss";
+@import "@/style.scss";
 
 #nav {
     padding: 30px;
