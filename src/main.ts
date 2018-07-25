@@ -9,12 +9,14 @@ import {
     faTwitter,
     faGithub,
     faLinkedin,
+    faTwitch,
+    faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 // Add font awesome
 // Add imported icons to library
-library.add(faTwitter, faGithub, faLinkedin);
+library.add(faTwitter, faGithub, faLinkedin, faTwitch, faYoutube);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

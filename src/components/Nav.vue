@@ -10,6 +10,8 @@
                     <a class="ext-icon" href="https://github.com/Hegemege" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
                     <a class="ext-icon" href="https://www.linkedin.com/in/henriniva/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
                     <a class="ext-icon" href="https://twitter.com/Hegemege" target="_blank"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+                    <a class="ext-icon" href="https://www.twitch.tv/hegemege" target="_blank"><font-awesome-icon :icon="['fab', 'twitch']" /></a>
+                    <a class="ext-icon" href="https://www.youtube.com/user/hegemege" target="_blank"><font-awesome-icon :icon="['fab', 'youtube']" /></a>
                     <div class="nav-separator"></div>
                     <a class="nav-link">RIGHT</a>
                     <a class="nav-link">RIGHT2</a>
