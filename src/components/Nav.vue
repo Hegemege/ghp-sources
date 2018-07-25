@@ -7,6 +7,9 @@
                 </div>
 
                 <div>
+                    <font-awesome-icon :icon="['fab', 'github']" />
+                    <font-awesome-icon :icon="['fab', 'twitter']" />
+                    <font-awesome-icon :icon="['fab', 'linkedin']" />
                     <a class="nav-link">RIGHT</a>
                     <a class="nav-link">RIGHT2</a>
                     <a class="nav-link">RIGHT3</a>
